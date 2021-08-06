@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Clínica Veterinária</title>
+    <link rel="stylesheet" type="text/css" href="Templates/CSS/estilos.css"/>
+    <script language="javascript" src="Scripts/funcoes.js"></script>
+</head>
+<body>
+    <div id="interface">
+        <div id="topo">
+            <header id="cabecalho">
+                <hgroup>
+                    <h1><br/>Avaliação P2 de DW1A3</h1>
+                    <h2>
+                        Pedro Haka - SP3047032 <br/>
+                        Resolução da P2 de DW1A3
+                    </h2>
+                    <h3>Clínica Veterinária</h3>
+                </hgroup>
+                <nav id="menu">
+                    <h1>Menu Principal</h1>
+                    <ul>
+                        <li><a href="index.html" target="_self">Home</a></li>
+                        <li><a href="clinicavet.html" target="_self">Clínica Veterinária</a></li>
+                        <li><a href="veiculos.html" target="_self">Loja de Veículos</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div id="corpo">
+            <form>
+            <p id="subtitle">
+                Esta pá&shy;gina con&shy;tém um pro&shy;gra&shy;ma de ser&shy;viço de 
+                Clí&shy;ni&shy;ca Vete&shy;riná&shy;ria. Para util&shy;izar o servi&shy;ço 
+                da Clí&shy;nica Vete&shy;riná&shy;ria in&shy;sira seus da&shy;dos 
+                nos cam&shy;pos indi&shy;cados: 
+            </p>
+        
+            <div id="form">
+                Nome do Cliente:
+                <input type="text" id="nomecliente">
+            </div>    
+            <div id="form">
+                Nome do Animal:
+                <input type="text" id="nomepet">
+            </div>
+            <div id="form">
+                Data da Consulta:
+                <input type="date" id="dataconsulta">
+            </div>
+            <div id="form">
+                Preço da Vacina:
+                <input type="text" id="precovacina">
+            </div>
+            <div id="form">
+                Possui Convênio Médico?
+                <input type="radio" id="sim" name="opcaoconvenio" value="true">
+                <label for="sim">Sim</label> 
+                <input type="radio" id="nao" name="opcaoconvenio" value="false">
+                <label for="nao">Não</label>
+            </div>
+            <div id="form">
+                <button id="vet" type="submit">Enviar</button>
+                <p id="respostavet"></p>
+            </div>
+            </form>
+        </div>
+        <div id="rodape">
+            <p>
+                Navegue pelo site usando o Menu Interativo de Links ao topo de cada página!
+            </p>
+        </div>
+    </div>
+</body>
+</html>
