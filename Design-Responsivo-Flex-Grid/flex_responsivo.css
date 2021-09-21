@@ -1,0 +1,60 @@
+/* Estilos Gerais */
+body, ul, li, p {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+h1.flex_lyt{
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* Estilo do Menu com Flex*/
+.header{
+    background-color: rgb(107, 171, 255);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
+nav.menu{
+    display: inline-block;
+}
+nav.menu li{
+    margin-left: -25px;
+    display: inline-block;
+    padding: 10px;
+}
+nav.menu li a{
+    padding: 20px;
+    background: rgb(33, 124, 199);
+}
+
+/* Estilos dos itens (no caso imagens) usando Flexbox */
+.img img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+.flex{
+    display: flex; 
+    flex-wrap: wrap;
+    /* o flex-wrap: wrap indica para o elemento que ele deve quebrar a linha */
+    max-width: 850px;
+    margin: 0 auto; 
+    /* auto deixa tudo ao centro,
+    regula as margens igualmente */
+}
+.flex > div{
+    flex: 1 1 180px;
+    /* 1 1 180px -> 1 significa maxgrowth, 1 significa maxshrink, 
+    180px significa a base ou menor tamanho possível de imagem sem quebra de wrap */
+    margin: 10px;
+}
