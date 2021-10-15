@@ -94,6 +94,7 @@ header{
 #logo{
     color: #fff;
     font-weight: 100;
+    padding: 18px;
 }
 
 /*Main ===========================*/
@@ -186,6 +187,7 @@ td.expense{
     
     position: fixed;
     top: 0%;
+    z-index: 999;
 
     display: flex;
     align-items: center;
@@ -203,6 +205,8 @@ td.expense{
     padding: 2.4rem;
     width: 90%;
     max-width: 500px;
+    position: relative;
+    z-index: 1;
 }
 
 /* Form ==========================*/
@@ -240,6 +244,7 @@ footer{
     padding: 4rem 0 2rem;
     color: var(--dark-blue);
     opacity: 0.6;
+    z-index:
 }
 
 /*Responsive ====================*/
