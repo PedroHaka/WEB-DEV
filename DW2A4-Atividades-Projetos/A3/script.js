@@ -37,7 +37,7 @@ const Transaction = {
     }],
     add(transaction){
         Transaction.all.push(transaction);
-        //console.log(Transaction.all);
+        console.log(Transaction.all);
         App.reload();
         
     },
@@ -123,8 +123,8 @@ const DOM = {
 // Formatações
 const Utils = {
     formatAmount(value){
-        value = Number(value.replace(/\,\./g, "")) * 100; //pesquisar oq é esse monte de barra
-        //console.log(value);
+        value = Number(value.replace(/\,\./g, "")) * 100; //replace ',' e '.' por '' /g = global
+        //console.log("formatAmount()" + value);
         return value;
     },
     formatDate(date){
@@ -143,6 +143,7 @@ const Utils = {
             style : "currency",
             currency : "BRL"
         })
+        //console.log(signal + value);
         return signal + value;
     }
 }
@@ -175,7 +176,9 @@ const Form = {
         let {description, amount, date } = Form.getValues();
         amount = Utils.formatAmount(amount);
         date = Utils.formatDate(date);
-
+        /* console.log(description);
+        console.log(amount);
+        console.log(date); */
         return{
             description: description,
             amount: amount,
@@ -198,7 +201,7 @@ const Form = {
             //verificar se todas as informações foram preenchidas
             Form.validateFields();
             //formatar os dados para salvar
-            Form.formatValues();
+            let transaction = Form.formatValues();
             //salvar
             Transaction.add(transaction);
             //apagar o formulário para novo uso
