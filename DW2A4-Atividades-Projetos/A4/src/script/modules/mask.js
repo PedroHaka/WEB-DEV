@@ -32,20 +32,12 @@ const masks = {
     }
 }
 
-
-/*  O código abaixo era utilizado para testar o módulo 
-    diretamente no index.html, porém com a componentização
-    da aplicação em módulos, este código agora faz parte
-    do main.js, que seleciona os elementos html e atribui
-    eventos à eles.
-    
-    document.querySelectorAll('input').forEach(($input) => {
+/* document.querySelectorAll('input').forEach(($input) => {
     const fields = $input.dataset.js;
 
     $input.addEventListener('input', (e) => {
         e.target.value = masks[fields](e.target.value);
     }, false);
-}); 
-*/
+}); */
 
 export default masks;
