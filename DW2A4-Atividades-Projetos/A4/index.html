@@ -15,29 +15,34 @@
           <p>Digite os dados do usuário corretamente!</p>
         </div>
 
-        <form action="" class="form">
+        <form onsubmit="init()" class="form">
           <label for="nome">NOME</label>
-          <input type="text" class="nome" id="input_nome" />
+          <input type="text" class="nome" id="input_nome"  
+          placeholder="Nome Sobrenome"/>
 
           <label for="cpf">CPF</label>
-          <input type="text" class="cpf" id="input_cpf" data-js="cpf" />
+          <input type="text" class="cpf" id="input_cpf" data-js="cpf" 
+          placeholder="xxx.xxx.xxx-xx"/>
 
           <label for="dt_nasc">DATA DE NASCIMENTO</label>
-          <input type="text" class="dt_nasc" id="input_dt_nasc" data-js="date" />
+          <input type="text" class="dt_nasc" id="input_date" data-js="date"
+          placeholder="xx/xx/xxxx" />
 
           <label for="email">E-MAIL</label>
-          <input type="text" class="email" id="input_email" />
+          <input type="text" class="email" id="input_email" placeholder="xxxxx@xxxx.xxx"/>
 
           <label for="fone">TELEFONE</label>
-          <input type="fone" class="fone" id="input_fone" data-js="fone" />
+          <input type="fone" class="fone" id="input_fone" data-js="fone" 
+          placeholder="(xx) xxxxx-xxxx"/>
 
           <label for="cep">CEP</label>
-          <input type="cep" class="cep" id="input_cep" data-js="cep" />
+          <input type="cep" class="cep" id="input_cep" data-js="cep" 
+          placeholder="xxxxx-xxx"/>
 
           <button id="button">Cadastrar</button>
         </form>
       </div>
     </div>
-    <script src="./src/js/main.js"></script>
+    <script type="module" src="./src/js/main.js"></script>
   </body>
 </html>
